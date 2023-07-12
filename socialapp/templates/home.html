@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %} Home Page {% endblock %}
+{% block body %}
+   {% if posts %}
+      {% for post in posts %}
+    
+      <article class="media content-section" style="border: 1px solid blue; margin-bottom: 20px; padding: 20px ; background-color: white;">
+         <div class="media-body">
+            <div class="article-metadat">
+               <a href="#" class="mr-2">{{ post.author }}</a>
+               <small class="text-danger">{{ post.date_posted |date:'M-d-Y' }}</small>
+            </div>
+           <h1><a href="#" class="article-title">{{ post.title }}</a></h1>
+           <p class="article">{{ post.content }}</p> 
+
+         </div>
+      </article>
+               
+      {% endfor %}
+        
+   {% else %}
+      <h1> No posts availble </h1>
+
+   {% endif %}  
+{% endblock %}

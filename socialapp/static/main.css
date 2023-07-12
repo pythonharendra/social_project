@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(47, 255, 85);
+    margin-top: 100px;
+}
+
+.content-section{
+      border: 1px white;
+      background-color: white;
+      padding: 10px;
+      margin-bottom:  50px;
+      color: blue;
+
+}
+
+footer{
+   background-color:white;
+   color: black;
+   text-align: center;
+   padding: 10px;
+   position: fixed;
+   left: 0;
+   bottom: 0; 
+   width: 100%;
+}
